@@ -12,9 +12,9 @@ import ArrowRightWhiteIcon from "../../public/assets/icons/ArrowRightWhiteIcon";
 import buildingIcon from "../../public/assets/images/building-office-icon.svg";
 import userGroupIcon from "../../public/assets/images/user-grup-icon.svg";
 import shieldCheckIcon from "../../public/assets/images/shield-check.svg";
-import partnershipImage1 from "../../public/assets/images/partnership-image1.png";
-import partnershipImage2 from "../../public/assets/images/partnership-image2.png";
-import partnershipImage3 from "../../public/assets/images/partnership-image3.png";
+import partnershipImage1 from "../../public/assets/images/partners/server-room-cabling-professional.webp";
+import partnershipImage2 from "../../public/assets/images/partners/electrical-panel-installation-commercial.webp";
+import partnershipImage3 from "../../public/assets/images/partners/network roomcablemanagement.webp";
 
 export default function Partnership() {
   const t = useTranslations("Partnership");

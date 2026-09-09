@@ -1,6 +1,6 @@
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Image from "next/image";
-import thumbnailVideo from "../../public/assets/images/video-image.png";
+import thumbnailVideo from "../../public/assets/images/hero/cabling-work.webp";
 
 export default function Videos() {
   return (

@@ -1,7 +1,7 @@
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Image from "next/image";
 import vectorFooterImage from "../../public/assets/images/vector-footer.webp";
-import logoPrimary from "../../public/assets/images/logo-primary.svg";
+import logo from "../../public/assets/images/logo.svg";
 import linkedinIcon from "../../public/assets/images/linkedin-icon.svg";
 import { useTranslations } from "next-intl";
 
@@ -33,7 +33,7 @@ export default function Footer() {
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="flex items-start gap-6 md:gap-10">
             <div>
-              <Image src={logoPrimary} alt="Unitech Distribution logo" className="size-12" />
+              <Image src={logo} alt="Unitech Distribution logo" className="size-14" />
             </div>
             <div>
               <h2 className="w-full md:w-56 text-h4 md:text-h2 text-primary-500 font-semibold">

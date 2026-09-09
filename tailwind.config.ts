@@ -29,14 +29,14 @@ export default {
       // },
 
       backgroundImage: {
-        "hero-pattern": "url('/assets/images/hero-image.webp')",
+        "hero-pattern": "url('/assets/images/hero/server-room1.webp')",
         "help-pattern": "url('/assets/images/help-image.webp')",
         "city-pattern": "url('/assets/images/city-image.webp')",
         "partner-pattern": "url('/assets/images/partner-image.webp')",
         "hero-download-pattern":
           "url('/assets/images/hero-download-image.webp')",
-        "hero-city-pattern": "url('/assets/images/hero-city-image.webp')",
-        "hero-partner-pattern": "url('/assets/images/hero-partner-image.webp')",
+        "hero-city-pattern": "url('/assets/images/hero/structured-cabling-installation-professional.webp')",
+        "hero-partner-pattern": "url('/assets/images/hero/business partnership.webp')",
         gradientPrimary: "linear-gradient(to right, #E8E1FF, #FFEADB)",
         gradientPrimaryHover: "linear-gradient(to right, #E5E5E5, #E5E5E5)",
         gradientSecondary: "linear-gradient(to right, #CFC1FF, #FFE1CC)",

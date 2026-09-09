@@ -1,8 +1,8 @@
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
-import newsImage1 from "../../public/assets/images/news-image1.png";
-import newsImage2 from "../../public/assets/images/news-image2.png";
-import newsImage3 from "../../public/assets/images/news-image3.png";
+import newsImage1 from "../../public/assets/images/Industry-Cards-images/modern-corporate-office-nterior-glass.webp";
+import newsImage2 from "../../public/assets/images/Industry-Cards-images/telecom-tower2.webp";
+import newsImage3 from "../../public/assets/images/Industry-Cards-images/smart-city2.webp";
 import NewsCard from "@/components/NewsCard";
 import { useTranslations } from "next-intl";
 

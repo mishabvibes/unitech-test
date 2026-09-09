@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import logoPrimary from "../../public/assets/images/logo-primary.svg";
+import logo from "../../public/assets/images/logo.svg";
+import logoWhite from "../../public/assets/images/logo-white.svg";
 import Button from "@/components/Button";
 import ChangeLanguage from "@/components/ChangeLanguage";
 import { PhoneWhiteIcon } from "../../public/assets/icons/PhoneWhiteIcon";
@@ -48,9 +49,9 @@ export default function Navbar() {
         <div className="grid grid-cols-2 lg:grid-cols-3 items-center">
           <Link href={`/${currentLocale}`}>
             <Image
-              src={logoPrimary}
+              src={isScrolled ? logo : logoWhite}
               alt="Unitech Distribution logo"
-              className="w-[54px] h:auto"
+              className="w-[54px] h-auto"
             />
           </Link>
           <div className="lg:flex items-center justify-center hidden">
@@ -97,9 +98,9 @@ export default function Navbar() {
           <div className="flex items-center justify-between p-4 md:p-8">
             <Link href={`/${currentLocale}`}>
               <Image
-                src={logoPrimary}
+                src={logo}
                 alt="Unitech Distribution logo"
-                className="w-[54px] h:auto"
+                className="w-[54px] h-auto"
               />
             </Link>
             <button
