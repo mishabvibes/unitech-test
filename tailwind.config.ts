@@ -29,8 +29,8 @@ export default {
       // },
 
       backgroundImage: {
-        "hero-pattern": "url('/assets/images/hero/server-room1.webp')",
-        "help-pattern": "url('/assets/images/cta1.webp')",
+        "hero-pattern": "url('/assets/images/hero/server-room2.webp')",
+        "help-pattern": "url('/assets/images/network-operations-center-team.webp')",
         "city-pattern": "url('/assets/images/Dubai-skyline-night-modern.webp')",
         "partner-pattern": "url('/assets/images/business-collaboration-dark-background.webp')",
         "hero-download-pattern":
