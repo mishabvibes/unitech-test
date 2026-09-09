@@ -30,9 +30,9 @@ export default {
 
       backgroundImage: {
         "hero-pattern": "url('/assets/images/hero/server-room1.webp')",
-        "help-pattern": "url('/assets/images/help-image.webp')",
-        "city-pattern": "url('/assets/images/city-image.webp')",
-        "partner-pattern": "url('/assets/images/partner-image.webp')",
+        "help-pattern": "url('/assets/images/cta1.webp')",
+        "city-pattern": "url('/assets/images/Dubai-skyline-night-modern.webp')",
+        "partner-pattern": "url('/assets/images/business-collaboration-dark-background.webp')",
         "hero-download-pattern":
           "url('/assets/images/hero-download-image.webp')",
         "hero-city-pattern": "url('/assets/images/hero/structured-cabling-installation-professional.webp')",

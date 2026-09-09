@@ -6,7 +6,6 @@
     "about": "About",
     "contact": "Contact Us"
   },
-
   "HomePage": {
     "Hero": {
       "title": "Powering the Region's Digital Infrastructure",
@@ -29,14 +28,12 @@
       "button": "Contact Us"
     }
   },
-
   "Mission": {
     "tag": "Our Mission",
     "text1": "We exist to bridge the gap between",
     "text2": "world-class ICT manufacturers",
     "text3": "and the integrators who bring connected infrastructure to life across the region."
   },
-
   "Priority": {
     "tag": "Why Partners Choose Us",
     "title": "Reliability by Design",
@@ -48,7 +45,6 @@
       "support": "Support"
     }
   },
-
   "Vehicle": {
     "tag": "Solutions",
     "title": "End-to-End ICT Solutions",
@@ -80,7 +76,6 @@
       }
     ]
   },
-
   "News": {
     "tag": "Who We Serve",
     "title": "Industries We Serve",
@@ -103,7 +98,6 @@
       }
     ]
   },
-
   "Partnership": {
     "tag": "Strategic Partnerships",
     "title": "Backed by the World's Leading Manufacturers",
@@ -133,21 +127,29 @@
       "next": "Next"
     }
   },
-
   "GarageLocation": {
     "tag": "Where We Operate",
     "regions": [
       {
         "region": "United Arab Emirates",
-        "areas": ["Dubai", "Abu Dhabi", "Sharjah"]
+        "areas": [
+          "Dubai",
+          "Abu Dhabi",
+          "Sharjah"
+        ]
       },
       {
         "region": "GCC Expansion",
-        "areas": ["Saudi Arabia [VERIFY WITH CLIENT]", "Qatar [VERIFY WITH CLIENT]", "Oman [VERIFY WITH CLIENT]", "Bahrain [VERIFY WITH CLIENT]", "Kuwait [VERIFY WITH CLIENT]"]
+        "areas": [
+          "Saudi Arabia ",
+          "Qatar ",
+          "Oman ",
+          "Bahrain ",
+          "Kuwait "
+        ]
       }
     ]
   },
-
   "VehicleSafety": {
     "tag": "Why Businesses Trust Us",
     "title1": "Reliability First",
@@ -161,7 +163,6 @@
     "title5": "Data-Driven Infrastructure Design",
     "desc5": "Solutions built around real project data — ensuring the right products, the right quantities and the right specifications for every deployment."
   },
-
   "Footer": {
     "UnitechDistribution": "Unitech Distribution",
     "Copyright": "© 2026 Unitech Distribution.",
@@ -187,7 +188,6 @@
       "ProductCatalogue": "Product Catalogue"
     }
   },
-
   "SolutionsPage": {
     "Hero": {
       "title": "Our Solutions",
@@ -200,14 +200,12 @@
       "button": "Contact Our Team"
     }
   },
-
   "ResourcesPage": {
     "title": "Get Our Company Profile & Product Catalogue",
     "description": "Download our capability statement and solution catalogue to learn more about Unitech Distribution's product lines, manufacturer partnerships and project track record.",
     "companyProfileButton": "Download Company Profile (PDF)",
     "productCatalogueButton": "Download Product Catalogue (PDF)"
   },
-
   "PartnersPage": {
     "hero": {
       "title": "Our Partners",
@@ -228,7 +226,6 @@
       "description": "Whether you're an established integrator or a growing reseller, we're ready to discuss partnership opportunities that help you win and deliver projects."
     }
   },
-
   "Benefit": {
     "tag": "Channel Partner Benefits",
     "title": "Why Partner With Us",
@@ -239,7 +236,6 @@
       "priorityStock": "Priority Stock Allocation"
     }
   },
-
   "Testimonial": {
     "tag": "What our partners say",
     "quotes": [
@@ -260,7 +256,6 @@
       }
     ]
   },
-
   "QrCode": {
     "title": "You can also access our resources via the QR codes below.",
     "companyProfile": {
@@ -272,7 +267,6 @@
       "description": "Browse our complete product catalogue with specifications, datasheets and pricing guides across all solution lines."
     }
   },
-
   "Stats": {
     "projects": "342",
     "projectsLabel": "Projects Executed",

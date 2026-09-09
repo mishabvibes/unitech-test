@@ -2,7 +2,7 @@ import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
 import Image from "next/image";
 import React from "react";
-import globeImage from "../../public/assets/images/globe-image.png";
+import globeImage from "../../public/assets/images/globe-image.webp";
 import vectorLocationGarage from "../../public/assets/images/vector-location-garage.svg";
 import CountryList from "@/components/CountryList";
 import { useTranslations } from "next-intl";
@@ -57,7 +57,7 @@ export default function GarageLocation() {
             <CountryList countries={regionsData.slice(0, 1)} />
             <CountryList countries={regionsData.slice(1)} />
           </div>
-          {/* [VERIFY WITH CLIENT] — Confirm which GCC countries Unitech currently serves */}
+          {/*  — Confirm which GCC countries Unitech currently serves */}
         </DashedBorderContainer>
       </div>
     </section>

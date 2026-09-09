@@ -1,5 +1,4 @@
 "use client";
-import { ArrowRightLongIcon } from "../../../public/assets/icons/ArrowRightLongIcon";
 import { PhoneWhiteIcon } from "../../../public/assets/icons/PhoneWhiteIcon";
 import Button from "@/components/Button";
 import Feature from "@/sections/Feature";
@@ -43,15 +42,6 @@ export default function Home() {
               </Button>
             </a>
           </div>
-          <a href="mailto:info@unitechdistribution.com">
-            <Button
-              variant="secondary"
-              icon={<ArrowRightLongIcon />}
-              iconPosition="right"
-            >
-              {tHero("buttons.requestQuote")}
-            </Button>
-          </a>
         </>
       </Hero>
       <Mission />

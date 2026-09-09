@@ -3,8 +3,7 @@ import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import imageProgram1 from "../../public/assets/images/priority-image1.png";
-import iconUnitech from "../../public/assets/images/program-beam-icon.svg";
+import imageProgram1 from "../../public/assets/images/hero/datacenter corridors.webp";
 import { ArrowRightLongIcon } from "../../public/assets/icons/ArrowRightLongIcon";
 
 export default function Priority() {
@@ -39,11 +38,8 @@ export default function Priority() {
                   <Image
                     src={imageProgram1}
                     alt="Unitech Distribution reliability and partner support"
-                    className="rounded-t-2xl"
+                    className="rounded-t-2xl w-full h-[280px] object-cover"
                   />
-                  <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <Image src={iconUnitech} alt="Unitech Distribution icon" />
-                  </div>
                 </div>
               </div>
               <div className="bg-secondary-200 px-7 md:px-10 rounded-b-3xl overflow-x-scroll md:overflow-visible">

@@ -4,11 +4,11 @@ interface CityGridProps {
 
 const CityGrid = ({ cities }: CityGridProps) => {
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 items-center mt-3 gap-y-2">
+    <div className="flex flex-wrap items-center mt-3 gap-x-6 gap-y-2">
       {cities.map((city, index) => (
         <p
           key={index}
-          className="text-text-blackSecondary text-body2 whitespace-nowrap"
+          className="text-text-blackSecondary text-body2"
         >
           {city}
         </p>

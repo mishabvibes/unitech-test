@@ -1,11 +1,11 @@
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import VehicleSafetyCard from "@/components/VehicleSafetyCard";
 import React from "react";
-import vehicleSafetyImage1 from "../../public/assets/images/vehicle-safety-card-image1.png";
-import vehicleSafetyImage2 from "../../public/assets/images/vehicle-safety-card-image2.png";
-import vehicleSafetyImage3 from "../../public/assets/images/vehicle-safety-card-image3.png";
-import vehicleSafetyImage4 from "../../public/assets/images/vehicle-safety-card-image4.png";
-import vehicleSafetyImage5 from "../../public/assets/images/vehicle-safety-card-image5.png";
+import vehicleSafetyImage1 from "../../public/assets/images/trust-section-images/quality-control-testing-electronics.webp";
+import vehicleSafetyImage2 from "../../public/assets/images/trust-section-images/CCTV-installation-building-exterior.webp";
+import vehicleSafetyImage3 from "../../public/assets/images/trust-section-images/business-meeting-technology-distributor.webp";
+import vehicleSafetyImage4 from "../../public/assets/images/trust-section-images/field-engineer-technician-deployment.webp";
+import vehicleSafetyImage5 from "../../public/assets/images/trust-section-images/network-design-software-dashboard.webp";
 import { useTranslations } from "next-intl";
 
 export default function VehicleSafety() {

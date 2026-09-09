@@ -4,7 +4,6 @@ import Image from "next/image";
 import logo from "../../public/assets/images/logo.svg";
 import logoWhite from "../../public/assets/images/logo-white.svg";
 import Button from "@/components/Button";
-import ChangeLanguage from "@/components/ChangeLanguage";
 import { PhoneWhiteIcon } from "../../public/assets/icons/PhoneWhiteIcon";
 import Link from "next/link";
 import MenuIcon from "../../public/assets/icons/MenuIcon";
@@ -14,7 +13,7 @@ import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 
 const navLinks = [
-  { key: "about", path: "#company" },
+  { key: "about", path: "#" },
   { key: "solutions", path: "/solutions" },
   { key: "partners", path: "/partners" },
 ];
@@ -39,11 +38,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed left-0 w-full z-30 transition-colors duration-300 ${
-        isScrolled
+      className={`fixed left-0 w-full z-30 transition-colors duration-300 ${isScrolled
           ? "py-4 top-0 md:py-6 lg:top-0 bg-background-whitebg/25 backdrop-blur shadow-md"
           : "bg-transparent pt-4 md:pt-6 lg:pt-0 lg:mt-14"
-      }`}
+        }`}
     >
       <div className="container mx-auto lg:px-16">
         <div className="grid grid-cols-2 lg:grid-cols-3 items-center">
@@ -69,7 +67,6 @@ export default function Navbar() {
           </div>
           <div className="flex justify-end gap-3">
             <div className="md:flex gap-3 hidden">
-              <ChangeLanguage />
               <a href="tel:+971504243288">
                 <Button
                   variant="primary"
@@ -91,9 +88,8 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <div
-          className={`lg:hidden fixed top-0 left-0 w-full bg-background-whitebg h-dvh shadow-lg z-30 transition-transform duration-300 ease-in-out ${
-            isOpen ? "transform translate-x-0" : "transform -translate-x-full"
-          }`}
+          className={`lg:hidden fixed top-0 left-0 w-full bg-background-whitebg h-dvh shadow-lg z-30 transition-transform duration-300 ease-in-out ${isOpen ? "transform translate-x-0" : "transform -translate-x-full"
+            }`}
         >
           <div className="flex items-center justify-between p-4 md:p-8">
             <Link href={`/${currentLocale}`}>
@@ -123,7 +119,6 @@ export default function Navbar() {
           </nav>
           <div className="border-t border-text-blackTertiary mx-4 md:mx-8 my-5"></div>
           <div className="flex flex-col md:flex-row gap-3 p-4 md:p-8 border-gray-200">
-            <ChangeLanguage />
             <a href="tel:+971504243288">
               <Button
                 variant="primary"

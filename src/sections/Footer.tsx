@@ -64,7 +64,7 @@ export default function Footer() {
               </div>
               <div className="mt-3 flex items-center gap-3">
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  {/* [VERIFY WITH CLIENT] — Add real LinkedIn URL */}
+                  {/*  — Add real LinkedIn URL */}
                   <Image
                     src={linkedinIcon}
                     alt="LinkedIn"
