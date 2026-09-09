@@ -1,8 +1,8 @@
-![Thumbnail design image beam](./public/assets/images/thumbnail.webp)
+![Thumbnail design image unitech](./public/assets/images/thumbnail.webp)
 
-# Beam Redesign Website
+# Unitech Distribution Website
 
-This project is a redesign of the original Beam website, aimed at creating a more user-friendly, fresh, and engaging experience. The redesign focuses on enhancing:
+This project is the marketing website for Unitech Distribution, aimed at creating a modern, professional, and engaging experience for B2B ICT infrastructure partners.
 
 User Experience (UX) with intuitive navigation.
 Visual appeal through modern, fresh aesthetics.
