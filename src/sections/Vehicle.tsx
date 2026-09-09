@@ -1,27 +1,21 @@
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
 import VehicleCard from "@/components/VehicleCard";
-import vehicleImage1 from "../../public/assets/images/vehicle-image1.png";
-import vehicleImage2 from "../../public/assets/images/vehicle-image2.png";
+import imgCabling from "../../public/assets/images/solution-images/product-photos-of-patch-panels.webp";
+import imgDatacenter from "../../public/assets/images/solution-images/servers.webp";
+import imgCctv from "../../public/assets/images/solution-images/cctv-cameras.webp";
+import imgUps from "../../public/assets/images/solution-images/UPS.webp";
+import imgWireless from "../../public/assets/images/solution-images/WiFi-APs.webp";
+import imgFiber from "../../public/assets/images/solution-images/fiber-optics.webp";
 import { useTranslations } from "next-intl";
 
-/* 
- * Solution images: Currently using existing placeholder images. 
- * Replace with real product photography when available:
- * - solutions-cabling.png
- * - solutions-datacenter.png
- * - solutions-cctv.png
- * - solutions-ups.png
- * - solutions-wireless.png
- * - solutions-fiber.png
- */
 const solutionImages = [
-  vehicleImage1, // Structured Cabling
-  vehicleImage2, // Datacenter Solutions
-  vehicleImage1, // CCTV & Video Surveillance
-  vehicleImage2, // UPS
-  vehicleImage1, // Wireless Communication & LTE
-  vehicleImage2, // Fiber Optic
+  imgCabling,    // Structured Cabling
+  imgDatacenter, // Datacenter Solutions
+  imgCctv,       // CCTV & Video Surveillance
+  imgUps,        // UPS
+  imgWireless,   // Wireless Communication & LTE
+  imgFiber,      // Fiber Optic
 ];
 
 export default function Vehicle() {

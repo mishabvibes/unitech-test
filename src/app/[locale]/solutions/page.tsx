@@ -20,7 +20,7 @@ export default function Solutions() {
         description={tHero("description")}
         backgroundClass="bg-hero-city-pattern"
       >
-        <div className="flex flex-col md:flex-row gap-3 mt-11">
+        <div className="flex flex-col md:flex-row gap-3">
           <a href="mailto:info@unitechdistribution.com">
             <Button
               variant="primary"

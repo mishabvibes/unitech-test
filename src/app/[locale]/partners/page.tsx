@@ -20,7 +20,7 @@ export default function Partners() {
         description={t("hero.description")}
         backgroundClass="bg-hero-partner-pattern"
       >
-        <div className="flex flex-col md:flex-row gap-3 mt-11">
+        <div className="flex flex-col md:flex-row gap-3">
           <a href="mailto:info@unitechdistribution.com">
             <Button
               variant="primary"

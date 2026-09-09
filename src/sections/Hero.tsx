@@ -17,13 +17,13 @@ export default function Hero({
         className={`container lg:px-16 w-full h-[42.5rem] bg-cover bg-center xl:rounded-[2rem] ${backgroundClass}`}
       >
         <div className="flex flex-col items-start justify-center h-full mx-auto">
-          <h1 className="text-text-whitePrimary text-6xl md:text-title font-semibold mt-32 w-full md:w-[519px]">
+          <h1 className="text-text-whitePrimary text-h2 md:text-h1 font-semibold mt-20 w-full md:w-[600px]">
             {title}
           </h1>
-          <p className="mt-3 text-body1 text-text-whiteSecondary w-full md:w-[519px]">
+          <p className="mt-4 text-body1 text-text-whiteSecondary w-full md:w-[600px]">
             {description}
           </p>
-          <div className="flex items-end justify-between w-full">
+          <div className="flex items-end justify-between w-full mt-8">
             {children}
           </div>
         </div>

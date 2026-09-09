@@ -16,7 +16,7 @@ export default function Resources() {
         backgroundClass="bg-hero-download-pattern"
       >
         <>
-          <div className="flex flex-col md:flex-row gap-3 mt-11">
+          <div className="flex flex-col md:flex-row gap-3">
             {/* [TODO] Replace href with real PDF URLs when available */}
             <a href="#" target="_blank" rel="noopener noreferrer">
               <Button

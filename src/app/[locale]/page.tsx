@@ -27,7 +27,7 @@ export default function Home() {
         backgroundClass="bg-hero-pattern"
       >
         <>
-          <div className="flex flex-col md:flex-row gap-3 mt-11">
+          <div className="flex flex-col md:flex-row gap-3">
             <a href="#solutions">
               <Button variant="secondary">
                 {tHero("buttons.exploreSolutions")}
