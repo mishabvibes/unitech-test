@@ -1,0 +1,282 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "partners": "Partners",
+    "about": "About",
+    "contact": "Contact Us"
+  },
+
+  "HomePage": {
+    "Hero": {
+      "title": "Powering the Region's Digital Infrastructure",
+      "description": "Unitech Distribution connects the world's leading ICT manufacturers with the systems integrators, telecom installers and resellers building the UAE's connected infrastructure.",
+      "buttons": {
+        "exploreSolutions": "Explore Our Solutions",
+        "talkToTeam": "Talk to Our Team",
+        "requestQuote": "Request a Quote"
+      }
+    },
+    "Feature": {
+      "tag": "Featured Solution",
+      "title": "Datacenter Solutions",
+      "description": "We supply the full stack — servers, storage, cooling, and power — so integrators can deliver resilient data centers on schedule.",
+      "button": "Learn More"
+    },
+    "Help": {
+      "title": "Let's Build Your Infrastructure Together",
+      "description": "Whether you're an integrator, installer or reseller, our team is ready to help you spec, source and deliver your next project.",
+      "button": "Contact Us"
+    }
+  },
+
+  "Mission": {
+    "tag": "Our Mission",
+    "text1": "We exist to bridge the gap between",
+    "text2": "world-class ICT manufacturers",
+    "text3": "and the integrators who bring connected infrastructure to life across the region."
+  },
+
+  "Priority": {
+    "tag": "Why Partners Choose Us",
+    "title": "Reliability by Design",
+    "description": "Every solution we distribute is backed by certified manufacturer support, regional stock availability, and a technical team that understands real project deadlines.",
+    "button": "Learn more",
+    "tabs": {
+      "reliability": "Reliability",
+      "security": "Security",
+      "support": "Support"
+    }
+  },
+
+  "Vehicle": {
+    "tag": "Solutions",
+    "title": "End-to-End ICT Solutions",
+    "description": "From the data center to the last mile, we distribute the products that power secure, connected infrastructure.",
+    "solutions": [
+      {
+        "title": "Structured Cabling",
+        "description": "The backbone cabling systems that support today's networks and tomorrow's expansion."
+      },
+      {
+        "title": "Datacenter Solutions",
+        "description": "Servers, storage, cooling and power infrastructure for resilient data centers."
+      },
+      {
+        "title": "CCTV & Video Surveillance",
+        "description": "Scalable surveillance systems for security, access control and intrusion detection."
+      },
+      {
+        "title": "UPS",
+        "description": "Uninterruptible power protection that keeps critical systems running."
+      },
+      {
+        "title": "Wireless Communication & LTE",
+        "description": "High-speed wireless and LTE connectivity for mobile and fixed deployments."
+      },
+      {
+        "title": "Fiber Optic",
+        "description": "High-bandwidth fiber infrastructure for next-generation connectivity."
+      }
+    ]
+  },
+
+  "News": {
+    "tag": "Who We Serve",
+    "title": "Industries We Serve",
+    "description": "We deliver ICT infrastructure solutions tailored to the unique demands of each sector.",
+    "industries": [
+      {
+        "category": "Enterprise",
+        "description": "End-to-end networking, data center, and security infrastructure for corporate offices, campuses and commercial real estate.",
+        "label": "Enterprise & Corporate"
+      },
+      {
+        "category": "Telecom",
+        "description": "Fiber, wireless and LTE infrastructure powering the networks that keep the region connected.",
+        "label": "Telecom Operators"
+      },
+      {
+        "category": "Government",
+        "description": "Secure, resilient ICT infrastructure for government facilities, smart cities and public-sector projects.",
+        "label": "Government & Public Sector"
+      }
+    ]
+  },
+
+  "Partnership": {
+    "tag": "Strategic Partnerships",
+    "title": "Backed by the World's Leading Manufacturers",
+    "description": "Our direct partnerships with global manufacturers let us bring certified, warranty-backed products to every project.",
+    "partnerships": [
+      {
+        "title": "Keline, Structured Cabling",
+        "subtitle": "Premium structured cabling systems engineered for high-performance enterprise and datacenter environments.",
+        "imageAlt": "Keline structured cabling products",
+        "iconAlt": "Building Office Icon"
+      },
+      {
+        "title": "Leviton, Cabling & Electrical",
+        "subtitle": "Industry-leading cabling, connectivity, and electrical solutions trusted by integrators worldwide.",
+        "imageAlt": "Leviton cabling and connectivity products",
+        "iconAlt": "Network Icon"
+      },
+      {
+        "title": "IC Realtime & Microlab, Surveillance & Wireless",
+        "subtitle": "Advanced video surveillance from IC Realtime and precision wireless components from Microlab for mission-critical deployments.",
+        "imageAlt": "IC Realtime surveillance and Microlab wireless products",
+        "iconAlt": "Shield Check Icon"
+      }
+    ],
+    "buttons": {
+      "prev": "Previous",
+      "next": "Next"
+    }
+  },
+
+  "GarageLocation": {
+    "tag": "Where We Operate",
+    "regions": [
+      {
+        "region": "United Arab Emirates",
+        "areas": ["Dubai", "Abu Dhabi", "Sharjah"]
+      },
+      {
+        "region": "GCC Expansion",
+        "areas": ["Saudi Arabia [VERIFY WITH CLIENT]", "Qatar [VERIFY WITH CLIENT]", "Oman [VERIFY WITH CLIENT]", "Bahrain [VERIFY WITH CLIENT]", "Kuwait [VERIFY WITH CLIENT]"]
+      }
+    ]
+  },
+
+  "VehicleSafety": {
+    "tag": "Why Businesses Trust Us",
+    "title1": "Reliability First",
+    "desc1": "Certified, tested products across every solution line — from structured cabling to surveillance — ensuring consistent quality and performance on every project.",
+    "title2": "Security-Grade Infrastructure",
+    "desc2": "Deep expertise in CCTV, video surveillance and data infrastructure, delivering the security foundation that enterprises and governments demand.",
+    "title3": "Empowering Our Channel Partners",
+    "desc3": "We enable integrators, installers and resellers to win and deliver projects with competitive pricing, pre-sales design support and reliable stock availability.",
+    "title4": "Regional Technical Expertise",
+    "desc4": "Trained local teams who understand the region's unique project requirements and provide hands-on deployment support across the UAE and GCC.",
+    "title5": "Data-Driven Infrastructure Design",
+    "desc5": "Solutions built around real project data — ensuring the right products, the right quantities and the right specifications for every deployment."
+  },
+
+  "Footer": {
+    "UnitechDistribution": "Unitech Distribution",
+    "Copyright": "© 2026 Unitech Distribution.",
+    "CopyrightCompany": "All rights reserved.",
+    "Address": "Jewellery & Gemplex Building, JLT, Dubai, UAE",
+    "Phone": "+971 50 424 3288",
+    "Email": "info@unitechdistribution.com",
+    "OfficeHours": "Sun–Thu, 9:00–18:00",
+    "Links": {
+      "Solutions": "Solutions",
+      "Partners": "Partners",
+      "About": "About",
+      "Resources": "Resources",
+      "Contact": "Contact",
+      "StructuredCabling": "Structured Cabling",
+      "DatacenterSolutions": "Datacenter Solutions",
+      "CCTV": "CCTV & Surveillance",
+      "UPS": "UPS Solutions",
+      "Wireless": "Wireless & LTE",
+      "FiberOptic": "Fiber Optic",
+      "BecomePartner": "Become a Partner",
+      "CompanyProfile": "Company Profile",
+      "ProductCatalogue": "Product Catalogue"
+    }
+  },
+
+  "SolutionsPage": {
+    "Hero": {
+      "title": "Our Solutions",
+      "description": "End-to-end ICT distribution covering structured cabling, datacenter, surveillance, power protection, wireless and fiber optic solutions — backed by the world's leading manufacturers.",
+      "button": "Request a Quote"
+    },
+    "Help": {
+      "title": "Need help specifying your next project?",
+      "description": "Our technical team can help you design, specify and source the right ICT infrastructure for any deployment — from a single office floor to a multi-site rollout.",
+      "button": "Contact Our Team"
+    }
+  },
+
+  "ResourcesPage": {
+    "title": "Get Our Company Profile & Product Catalogue",
+    "description": "Download our capability statement and solution catalogue to learn more about Unitech Distribution's product lines, manufacturer partnerships and project track record.",
+    "companyProfileButton": "Download Company Profile (PDF)",
+    "productCatalogueButton": "Download Product Catalogue (PDF)"
+  },
+
+  "PartnersPage": {
+    "hero": {
+      "title": "Our Partners",
+      "description": "We work with the world's leading ICT manufacturers to bring certified, warranty-backed products to systems integrators and resellers across the UAE and GCC."
+    },
+    "buttons": {
+      "becomePartner": "Become a Partner",
+      "contactUs": "Contact Us"
+    },
+    "feature": {
+      "tag": "Partner Program",
+      "title": "Become a Channel Partner",
+      "description": "Join our network of systems integrators, telecom installers and value-added resellers. Access competitive pricing, pre-sales technical support and priority stock allocation.",
+      "button": "Learn More"
+    },
+    "help": {
+      "title": "Let's collaborate!",
+      "description": "Whether you're an established integrator or a growing reseller, we're ready to discuss partnership opportunities that help you win and deliver projects."
+    }
+  },
+
+  "Benefit": {
+    "tag": "Channel Partner Benefits",
+    "title": "Why Partner With Us",
+    "description": "Unitech Distribution empowers systems integrators, installers and resellers with the products, support and pricing they need to win projects.",
+    "items": {
+      "competitivePricing": "Competitive Pricing",
+      "technicalSupport": "Pre-Sales Technical Support",
+      "priorityStock": "Priority Stock Allocation"
+    }
+  },
+
+  "Testimonial": {
+    "tag": "What our partners say",
+    "quotes": [
+      {
+        "quote": "Unitech's stock availability is unmatched in the region. We can commit to project timelines knowing the products will be there when we need them. [PLACEHOLDER — replace with real client quote]",
+        "author": "Ahmad Al-Rashid",
+        "position": "Director of Operations, Systems Integration Firm [PLACEHOLDER]"
+      },
+      {
+        "quote": "Their pre-sales technical support helped us design a datacenter solution that came in under budget without compromising on resilience. [PLACEHOLDER — replace with real client quote]",
+        "author": "Sarah Mitchell",
+        "position": "Project Manager, Telecom Installer [PLACEHOLDER]"
+      },
+      {
+        "quote": "Working with Unitech means working with a distributor that genuinely understands our business. The turnaround on quotes and support requests is exceptional. [PLACEHOLDER — replace with real client quote]",
+        "author": "Khalid Mahmoud",
+        "position": "CEO, Value-Added Reseller [PLACEHOLDER]"
+      }
+    ]
+  },
+
+  "QrCode": {
+    "title": "You can also access our resources via the QR codes below.",
+    "companyProfile": {
+      "title": "Company Profile",
+      "description": "Download our full capability statement covering solution lines, manufacturer partnerships and regional project track record."
+    },
+    "productCatalogue": {
+      "title": "Product Catalogue",
+      "description": "Browse our complete product catalogue with specifications, datasheets and pricing guides across all solution lines."
+    }
+  },
+
+  "Stats": {
+    "projects": "342",
+    "projectsLabel": "Projects Executed",
+    "customers": "580+",
+    "customersLabel": "Satisfied Customers"
+  }
+}
