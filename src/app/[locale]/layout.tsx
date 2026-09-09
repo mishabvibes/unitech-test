@@ -17,17 +17,17 @@ type Locale = "en" | "fr" | "id";
 
 interface RootLayoutProps {
   children: React.ReactNode;
-  params: { locale: Locale };
+  params: Promise<{ locale: string }>;
 }
 
 export default async function RootLayout({
   children,
   params,
 }: RootLayoutProps) {
-  const { locale } = params;
+  const { locale } = await params;
 
   // Ensure locale is included in routing.locales
-  if (!routing.locales.includes(locale)) {
+  if (!routing.locales.includes(locale as "en" | "fr" | "id")) {
     notFound();
   }
 
