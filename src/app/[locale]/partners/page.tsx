@@ -41,7 +41,7 @@ export default function Partners() {
         description={t("feature.description")}
         button={t("feature.button")}
       />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Help
         title={t("help.title")}
         description={t("help.description")}
