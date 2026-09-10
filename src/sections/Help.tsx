@@ -37,46 +37,6 @@ export default function Help({
           </div>
         </div>
       </ScrollReveal>
-      
-      {/* Dashed Border Top Left */}
-      <div className="absolute z-10 top-[26px] hidden xl:block xl:left-[26px]">
-        <Image
-          src={bulletIcon}
-          alt="Bullet icon"
-          className="size-2"
-          draggable="false"
-        />
-      </div>
-      {/* Dashed Border Top Right */}
-      <div className="absolute z-10 top-[26px] hidden xl:block xl:right-[26px]">
-        <Image
-          src={bulletIcon}
-          alt="Bullet icon"
-          className="size-2"
-          draggable="false"
-        />
-      </div>
-
-      <div className="container max-w-xs md:max-w-[44rem] lg:max-w-6xl -mb-10 xl:mb-0 pb-10 border-x border-b border-others-santasGray border-dashed hidden xl:block"></div>
-
-      {/* Dashed Border Bottom Left */}
-      <div className="absolute z-10 -bottom-[122px] hidden xl:block xl:left-[26px]">
-        <Image
-          src={bulletIcon}
-          alt="Bullet icon"
-          className="size-2"
-          draggable="false"
-        />
-      </div>
-      {/* Dashed Border Bottom Right */}
-      <div className="absolute z-10 -bottom-[122px] hidden xl:block xl:right-[26px]">
-        <Image
-          src={bulletIcon}
-          alt="Bullet icon"
-          className="size-2"
-          draggable="false"
-        />
-      </div>
     </section>
   );
 }
