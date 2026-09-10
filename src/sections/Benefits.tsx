@@ -33,36 +33,39 @@ export default function Benefits() {
             </ScrollReveal>
           </div>
         </div>
-        <div className="relative mt-14 grid grid-cols-1 lg:grid-cols-3 items-center max-w-4xl mx-auto gap-y-2">
-          <div className="absolute -z-10">
-            <Image src={vectorBenefit} alt="Decorative background element" />
+        <div className="relative mt-12 md:mt-16 lg:mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 lg:gap-12 w-full max-w-5xl mx-auto">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 w-full flex justify-center opacity-60">
+            <Image src={vectorBenefit} alt="Decorative background element" className="w-full max-w-4xl object-contain pointer-events-none" draggable="false" />
           </div>
-          <ScrollReveal delay={200}>
-            <div className="flex items-center gap-2">
-              <div className="size-10 flex-shrink-0">
+          
+          <ScrollReveal delay={200} className="w-full">
+            <div className="flex items-center gap-4 lg:gap-5 justify-start md:justify-center">
+              <div className="size-10 lg:size-12 flex-shrink-0">
                 <CheckCircleIcon />
               </div>
-              <span className="text-h4 font-medium text-text-blackPrimary">
+              <span className="text-h6 md:text-h5 font-medium text-text-blackPrimary leading-tight">
                 {t("items.competitivePricing")}
               </span>
             </div>
           </ScrollReveal>
-          <ScrollReveal delay={300}>
-            <div className="flex items-center gap-2">
-              <div className="size-10 flex-shrink-0">
+
+          <ScrollReveal delay={300} className="w-full">
+            <div className="flex items-center gap-4 lg:gap-5 justify-start md:justify-center">
+              <div className="size-10 lg:size-12 flex-shrink-0">
                 <CheckCircleIcon />
               </div>
-              <span className="text-h4 font-medium text-text-blackPrimary">
+              <span className="text-h6 md:text-h5 font-medium text-text-blackPrimary leading-tight">
                 {t("items.technicalSupport")}
               </span>
             </div>
           </ScrollReveal>
-          <ScrollReveal delay={400}>
-            <div className="flex items-center gap-2">
-              <div className="size-10 flex-shrink-0">
+
+          <ScrollReveal delay={400} className="w-full">
+            <div className="flex items-center gap-4 lg:gap-5 justify-start md:justify-center">
+              <div className="size-10 lg:size-12 flex-shrink-0">
                 <CheckCircleIcon />
               </div>
-              <span className="text-h4 font-medium text-text-blackPrimary">
+              <span className="text-h6 md:text-h5 font-medium text-text-blackPrimary leading-tight">
                 {t("items.priorityStock")}
               </span>
             </div>
