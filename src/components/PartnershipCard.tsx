@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
-import Button from "./Button";
 
 interface PartnershipCardProps {
   title: string;
@@ -8,7 +7,6 @@ interface PartnershipCardProps {
   imageSrc: string | StaticImageData;
   imageAlt: string;
   iconSrc: string;
-  buttonIcon: React.ReactNode;
 }
 
 export default function PartnershipCard({
@@ -17,10 +15,9 @@ export default function PartnershipCard({
   imageSrc,
   imageAlt,
   iconSrc,
-  buttonIcon,
 }: PartnershipCardProps) {
   return (
-    <div className="relative overflow-hidden w-full md:max-w-[564px] h-full bg-gradientTertiary hover:bg-gradientTertiaryHover transition-all duration-300 ease-in-out rounded-[1.75rem] flex flex-shrink-0">
+    <div className="relative overflow-hidden w-full h-full bg-gradientTertiary hover:bg-gradientTertiaryHover transition-all duration-300 ease-in-out rounded-[1.75rem] flex flex-col">
       <div className="flex flex-col w-full h-full justify-between gap-6 p-5 md:p-10">
         {/* Header Section */}
         <div className="flex items-start gap-3">
@@ -43,17 +40,13 @@ export default function PartnershipCard({
         </div>
 
         {/* Content Section */}
-        <div className="relative flex items-end justify-between mt-6">
+        <div className="relative flex justify-center mt-auto w-full">
           {/* Image */}
           <Image
             src={imageSrc}
             alt={imageAlt}
-            className="w-[150px] md:w-[350px] h-auto rounded-t-xl -mb-5 md:-mb-10"
+            className="w-full h-48 md:h-[220px] object-cover rounded-t-xl -mb-5 md:-mb-10 shadow-sm"
           />
-          {/* Button */}
-          <div>
-            <Button variant="tertiary">{buttonIcon}</Button>
-          </div>
         </div>
       </div>
     </div>

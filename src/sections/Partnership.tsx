@@ -4,7 +4,6 @@ import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
 import PartnershipCard from "@/components/PartnershipCard";
 import { useTranslations } from "next-intl";
-import ArrowRightWhiteIcon from "../../public/assets/icons/ArrowRightWhiteIcon";
 import buildingIcon from "../../public/assets/images/building-office-icon.svg";
 import userGroupIcon from "../../public/assets/images/user-grup-icon.svg";
 import shieldCheckIcon from "../../public/assets/images/shield-check.svg";
@@ -24,7 +23,6 @@ export default function Partnership() {
       imageSrc: partnershipImage1,
       imageAlt: t("partnerships.0.imageAlt"),
       iconSrc: buildingIcon,
-      buttonIcon: <ArrowRightWhiteIcon />,
     },
     {
       title: t("partnerships.1.title"),
@@ -32,7 +30,6 @@ export default function Partnership() {
       imageSrc: partnershipImage2,
       imageAlt: t("partnerships.1.imageAlt"),
       iconSrc: userGroupIcon,
-      buttonIcon: <ArrowRightWhiteIcon />,
     },
     {
       title: t("partnerships.2.title"),
@@ -40,7 +37,6 @@ export default function Partnership() {
       imageSrc: partnershipImage3,
       imageAlt: t("partnerships.2.imageAlt"),
       iconSrc: shieldCheckIcon,
-      buttonIcon: <ArrowRightWhiteIcon />,
     },
   ];
 
@@ -68,9 +64,7 @@ export default function Partnership() {
             </div>
           </div>
           <div className="mt-9">
-            <div
-              className="mt-6 flex items-stretch gap-7 overflow-x-scroll scrollbar-hide smooth-scroll"
-            >
+            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
               {partnershipData.map((data, index) => (
                 <ScrollReveal key={index} delay={300 + index * 100} className="h-full">
                   <PartnershipCard
@@ -79,7 +73,6 @@ export default function Partnership() {
                     imageSrc={data.imageSrc}
                     imageAlt={data.imageAlt}
                     iconSrc={data.iconSrc}
-                    buttonIcon={data.buttonIcon}
                   />
                 </ScrollReveal>
               ))}
