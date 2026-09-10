@@ -58,8 +58,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed left-0 w-full z-30 transition-all duration-500 ease-in-out ${isScrolled
-          ? "py-4 top-0 md:py-6 lg:top-0 bg-background-whitebg/80 backdrop-blur-md shadow-sm"
+      className={`fixed top-0 left-0 w-full z-30 transition-all duration-500 ease-in-out ${isScrolled
+          ? "py-4 md:py-6 bg-background-whitebg/80 backdrop-blur-md shadow-sm"
           : "bg-transparent pt-4 md:pt-6 lg:pt-0 lg:mt-14"
         }`}
     >
@@ -73,13 +73,23 @@ export default function Navbar() {
             />
           </Link>
           <div className="lg:flex items-center justify-center hidden">
-            <nav className="flex px-5 py-3 gap-6 rounded-xl bg-others-stack/50 backdrop-blur">
+            <nav
+              className={`flex px-5 py-3 gap-6 rounded-xl backdrop-blur transition-all duration-500 ease-in-out ${
+                isScrolled
+                  ? "bg-white/70 border border-black/[0.06] shadow-[0_1px_4px_rgba(0,0,0,0.06)]"
+                  : "bg-others-stack/50"
+              }`}
+            >
               {navLinks.map((link) => (
                 <Link
                   key={link.key}
                   href={`/${currentLocale}${link.path}`}
                   onClick={(e) => handleNavClick(e, link.path)}
-                  className="px-2 text-secondary-50 font-medium text-sm transition-colors hover:text-white"
+                  className={`px-2 py-0.5 rounded-md font-medium text-sm transition-all duration-500 ease-in-out ${
+                    isScrolled
+                      ? "text-text-blackPrimary hover:text-primary-600 hover:bg-primary-50/60"
+                      : "text-secondary-50 hover:text-white"
+                  }`}
                 >
                   {t(link.key)}
                 </Link>
@@ -113,7 +123,7 @@ export default function Navbar() {
             }`}
         >
           <div className="flex items-center justify-between p-4 md:p-8">
-            <Link href={`/${currentLocale}`}>
+            <Link href={`/${currentLocale}`} onClick={() => setIsOpen(false)}>
               <Image
                 src={logo}
                 alt="Unitech Distribution logo"
@@ -132,6 +142,7 @@ export default function Navbar() {
               <Link
                 key={link.key}
                 href={`/${currentLocale}${link.path}`}
+                onClick={() => setIsOpen(false)}
                 className="text-text-blackSecondary font-medium text-h3"
               >
                 {t(link.key)}
@@ -140,7 +151,7 @@ export default function Navbar() {
           </nav>
           <div className="border-t border-text-blackTertiary mx-4 md:mx-8 my-5"></div>
           <div className="flex flex-col md:flex-row gap-3 p-4 md:p-8 border-gray-200">
-            <a href="tel:+971504243288">
+            <a href="tel:+971504243288" onClick={() => setIsOpen(false)}>
               <Button
                 variant="primary"
                 icon={<PhoneWhiteIcon />}
