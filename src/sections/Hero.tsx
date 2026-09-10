@@ -14,16 +14,26 @@ export default function Hero({
   return (
     <section className="xl:px-7 xl:pt-7">
       <div
-        className={`container lg:px-16 w-full h-[42.5rem] bg-cover bg-center xl:rounded-[2rem] ${backgroundClass}`}
+        className={`relative container lg:px-16 w-full h-[42.5rem] bg-cover bg-center xl:rounded-[2rem] hero-bg-animate overflow-hidden ${backgroundClass}`}
       >
-        <div className="flex flex-col items-start justify-center h-full mx-auto">
-          <h1 className="text-text-whitePrimary text-h2 md:text-h1 font-semibold mt-20 w-full md:w-[600px]">
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="relative z-10 flex flex-col items-start justify-center h-full mx-auto">
+          <h1
+            className="text-text-whitePrimary text-h2 md:text-h1 font-semibold mt-20 w-full md:w-[600px] hero-animate"
+            style={{ "--hero-delay": "100ms" } as React.CSSProperties}
+          >
             {title}
           </h1>
-          <p className="mt-4 text-body1 text-text-whiteSecondary w-full md:w-[600px]">
+          <p
+            className="mt-4 text-body1 text-text-whiteSecondary w-full md:w-[600px] hero-animate"
+            style={{ "--hero-delay": "250ms" } as React.CSSProperties}
+          >
             {description}
           </p>
-          <div className="flex items-end justify-between w-full mt-8">
+          <div
+            className="flex items-end justify-between w-full mt-8 hero-animate"
+            style={{ "--hero-delay": "400ms" } as React.CSSProperties}
+          >
             {children}
           </div>
         </div>

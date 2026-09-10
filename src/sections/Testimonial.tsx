@@ -69,7 +69,7 @@ export default function Testimonial() {
             <div className="flex lg:justify-end">
               <div className="flex flex-col">
                 <div>
-                  {/* [PLACEHOLDER] Replace with real partner/company logos */}
+                  {/*  Replace with real partner/company logos */}
                   <Image
                     src={testimonialData[currentIndex].partnerLogo}
                     alt="Partner company logo"
@@ -77,7 +77,7 @@ export default function Testimonial() {
                 </div>
                 <div className="flex items-center gap-3 mt-6">
                   <div>
-                    {/* [PLACEHOLDER] Replace with real testimonial headshots */}
+                    {/*  Replace with real testimonial headshots */}
                     <Image
                       src={testimonialData[currentIndex].userTestimonialImage}
                       alt="Testimonial author"

@@ -1,19 +1,20 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import logo from "../../public/assets/images/logo.svg";
 import logoWhite from "../../public/assets/images/logo-white.svg";
 import Button from "@/components/Button";
+import ChangeLanguage from "@/components/ChangeLanguage";
 import { PhoneWhiteIcon } from "../../public/assets/icons/PhoneWhiteIcon";
-import Link from "next/link";
 import MenuIcon from "../../public/assets/icons/MenuIcon";
-import { useEffect, useState } from "react";
 import CloseIcon from "../../public/assets/icons/CloseIcon";
-import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { key: "about", path: "#" },
+  { key: "about", path: "/" },
   { key: "solutions", path: "/solutions" },
   { key: "partners", path: "/partners" },
 ];
@@ -24,7 +25,6 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
-  // Extract the current locale from the path (e.g., /en, /fr)
   const currentLocale = pathname.split("/")[1] || "en";
 
   useEffect(() => {
@@ -36,10 +36,30 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    if (targetId.startsWith("#")) {
+      e.preventDefault();
+      // If we are on a different page, let Next.js handle the routing first
+      // But since these are hash links, if we are on the same page, we scroll smoothly
+      const element = document.querySelector(targetId);
+      if (element) {
+        const offset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+        
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+      setIsOpen(false);
+    }
+  };
+
   return (
     <header
-      className={`fixed left-0 w-full z-30 transition-colors duration-300 ${isScrolled
-          ? "py-4 top-0 md:py-6 lg:top-0 bg-background-whitebg/25 backdrop-blur shadow-md"
+      className={`fixed left-0 w-full z-30 transition-all duration-500 ease-in-out ${isScrolled
+          ? "py-4 top-0 md:py-6 lg:top-0 bg-background-whitebg/80 backdrop-blur-md shadow-sm"
           : "bg-transparent pt-4 md:pt-6 lg:pt-0 lg:mt-14"
         }`}
     >
@@ -58,7 +78,8 @@ export default function Navbar() {
                 <Link
                   key={link.key}
                   href={`/${currentLocale}${link.path}`}
-                  className="px-2 text-secondary-50 font-medium text-sm"
+                  onClick={(e) => handleNavClick(e, link.path)}
+                  className="px-2 text-secondary-50 font-medium text-sm transition-colors hover:text-white"
                 >
                   {t(link.key)}
                 </Link>

@@ -1,3 +1,5 @@
+"use client";
+
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
 import newsImage1 from "../../public/assets/images/Industry-Cards-images/modern-corporate-office-nterior-glass.webp";
@@ -5,6 +7,7 @@ import newsImage2 from "../../public/assets/images/Industry-Cards-images/telecom
 import newsImage3 from "../../public/assets/images/Industry-Cards-images/smart-city2.webp";
 import NewsCard from "@/components/NewsCard";
 import { useTranslations } from "next-intl";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function News() {
   const t = useTranslations("News");
@@ -38,28 +41,35 @@ export default function News() {
       <DashedBorderContainer>
         <div>
           <div className="flex flex-col items-center max-w-2xl mx-auto">
-            <div>
-              <Tag>{t("tag")}</Tag>
-            </div>
+            <ScrollReveal>
+              <div>
+                <Tag>{t("tag")}</Tag>
+              </div>
+            </ScrollReveal>
             <div className="mt-8 flex flex-col gap-3 items-center">
-              <h3 className="text-h3 font-medium text-text-blackPrimary">
-                {t("title")}
-              </h3>
-              <p className="text-body1 text-text-blackSecondary text-center">
-                {t("description")}
-              </p>
+              <ScrollReveal delay={100}>
+                <h3 className="text-h3 font-medium text-text-blackPrimary">
+                  {t("title")}
+                </h3>
+              </ScrollReveal>
+              <ScrollReveal delay={200}>
+                <p className="text-body1 text-text-blackSecondary text-center">
+                  {t("description")}
+                </p>
+              </ScrollReveal>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 items-start gap-7 mt-10">
             {industriesData.map((industry, index) => (
-              <NewsCard
-                key={index}
-                imageSrc={industry.imageSrc}
-                imageAlt={industry.imageAlt}
-                category={industry.category}
-                description={industry.description}
-                date={industry.date}
-              />
+              <ScrollReveal key={index} delay={200 + index * 100}>
+                <NewsCard
+                  imageSrc={industry.imageSrc}
+                  imageAlt={industry.imageAlt}
+                  category={industry.category}
+                  description={industry.description}
+                  date={industry.date}
+                />
+              </ScrollReveal>
             ))}
           </div>
         </div>

@@ -12,6 +12,7 @@ import ArrowLeftBlackIcon from "../../public/assets/icons/ArrowLeftBlackIcon";
 import { ArrowRightLongIcon } from "../../public/assets/icons/ArrowRightLongIcon";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ScrollReveal from "@/components/ScrollReveal";
 
 type FeatureProps = {
   tag: string;
@@ -51,27 +52,35 @@ export default function Feature({
       <DashedBorderContainer showTop={false}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-10 items-center">
           <div className="flex flex-col">
-            <Tag>{tag}</Tag>
-            <h3 className="mt-8 text-text-blackPrimary text-h3 font-medium">
-              {title}
-            </h3>
-            <p className="mt-3 text-text-blackSecondary text-body1">
-              {description}
-            </p>
-            <div className="mt-6">
-              <Link href={`/${currentLocale}/solutions`}>
-                <Button
-                  variant="tertiary"
-                  icon={<ArrowRightLongIcon />}
-                  iconPosition="right"
-                >
-                  {button}
-                </Button>
-              </Link>
-            </div>
+            <ScrollReveal>
+              <Tag>{tag}</Tag>
+            </ScrollReveal>
+            <ScrollReveal delay={100}>
+              <h3 className="mt-8 text-text-blackPrimary text-h3 font-medium">
+                {title}
+              </h3>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <p className="mt-3 text-text-blackSecondary text-body1">
+                {description}
+              </p>
+            </ScrollReveal>
+            <ScrollReveal delay={300}>
+              <div className="mt-6">
+                <Link href={`/${currentLocale}/solutions`}>
+                  <Button
+                    variant="tertiary"
+                    icon={<ArrowRightLongIcon />}
+                    iconPosition="right"
+                  >
+                    {button}
+                  </Button>
+                </Link>
+              </div>
+            </ScrollReveal>
           </div>
           <div className="flex justify-end">
-            <div className="w-[530px] flex flex-col gap-4">
+            <ScrollReveal variant="scroll-reveal-scale" delay={200} className="w-[530px] flex flex-col gap-4">
               <div className="w-full md:h-[348px] mx-auto bg-gradientPrimary rounded-3xl">
                 <div className="flex items-center justify-center p-10">
                   <Image
@@ -98,7 +107,7 @@ export default function Feature({
                   />
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
           </div>
         </div>
       </DashedBorderContainer>

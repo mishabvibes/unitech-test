@@ -1,3 +1,5 @@
+"use client";
+
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
 import Image from "next/image";
@@ -6,6 +8,7 @@ import globeImage from "../../public/assets/images/globe-image.webp";
 import vectorLocationGarage from "../../public/assets/images/vector-location-garage.svg";
 import CountryList from "@/components/CountryList";
 import { useTranslations } from "next-intl";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function GarageLocation() {
   const t = useTranslations("GarageLocation");
@@ -42,20 +45,28 @@ export default function GarageLocation() {
 
         <DashedBorderContainer>
           <div>
-            <div className="flex justify-center">
-              <Tag>{t("tag")}</Tag>
-            </div>
-            <div className="w-full flex justify-center mt-6">
-              <Image
-                src={globeImage}
-                alt="Unitech Distribution regional coverage map"
-                className="w-full md:max-w-2xl"
-              />
-            </div>
+            <ScrollReveal>
+              <div className="flex justify-center">
+                <Tag>{t("tag")}</Tag>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal variant="scroll-reveal-scale" delay={100}>
+              <div className="w-full flex justify-center mt-6">
+                <Image
+                  src={globeImage}
+                  alt="Unitech Distribution regional coverage map"
+                  className="w-full md:max-w-2xl"
+                />
+              </div>
+            </ScrollReveal>
           </div>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-10">
-            <CountryList countries={regionsData.slice(0, 1)} />
-            <CountryList countries={regionsData.slice(1)} />
+            <ScrollReveal delay={200}>
+              <CountryList countries={regionsData.slice(0, 1)} />
+            </ScrollReveal>
+            <ScrollReveal delay={300}>
+              <CountryList countries={regionsData.slice(1)} />
+            </ScrollReveal>
           </div>
           {/*  — Confirm which GCC countries Unitech currently serves */}
         </DashedBorderContainer>

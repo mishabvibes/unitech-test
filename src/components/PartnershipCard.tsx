@@ -20,8 +20,8 @@ export default function PartnershipCard({
   buttonIcon,
 }: PartnershipCardProps) {
   return (
-    <div className="relative overflow-hidden w-full md:max-w-[564px] bg-gradientTertiary hover:bg-gradientTertiaryHover transition-all duration-300 ease-in-out rounded-[1.75rem] flex flex-shrink-0">
-      <div className="flex flex-col w-full gap-6 p-5 md:p-10">
+    <div className="relative overflow-hidden w-full md:max-w-[564px] h-full bg-gradientTertiary hover:bg-gradientTertiaryHover transition-all duration-300 ease-in-out rounded-[1.75rem] flex flex-shrink-0">
+      <div className="flex flex-col w-full h-full justify-between gap-6 p-5 md:p-10">
         {/* Header Section */}
         <div className="flex items-start gap-3">
           <Image

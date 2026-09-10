@@ -1,8 +1,11 @@
+"use client";
+
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
 import vectorMisi from "../../public/assets/images/vector-misi.svg";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Mission() {
   const t = useTranslations("Mission");
@@ -20,12 +23,12 @@ export default function Mission() {
         </div>
 
         {/* Tag */}
-        <div className="flex justify-center">
+        <ScrollReveal className="flex justify-center">
           <Tag>{t("tag")}</Tag>
-        </div>
+        </ScrollReveal>
 
         {/* Content */}
-        <div className="max-w-4xl mx-auto">
+        <ScrollReveal delay={120} className="max-w-4xl mx-auto">
           {/* Text */}
           <div className="relative z-20">
             <h3 className="text-h4 md:text-h3 text-center text-text-blackPrimary font-medium mt-8">
@@ -34,7 +37,7 @@ export default function Mission() {
               {t("text3")}
             </h3>
           </div>
-        </div>
+        </ScrollReveal>
       </DashedBorderContainer>
     </section>
   );

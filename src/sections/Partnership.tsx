@@ -1,13 +1,9 @@
 "use client";
 
-import Button from "@/components/Button";
 import DashedBorderContainer from "@/components/DashedBorderContainer";
 import Tag from "@/components/Tag";
 import PartnershipCard from "@/components/PartnershipCard";
 import { useTranslations } from "next-intl";
-import { useRef } from "react";
-import ArrowLeftBlackIcon from "../../public/assets/icons/ArrowLeftBlackIcon";
-import ArrowRightBlackIcon from "../../public/assets/icons/ArrowRightBlackIcon";
 import ArrowRightWhiteIcon from "../../public/assets/icons/ArrowRightWhiteIcon";
 import buildingIcon from "../../public/assets/images/building-office-icon.svg";
 import userGroupIcon from "../../public/assets/images/user-grup-icon.svg";
@@ -16,23 +12,10 @@ import partnershipImage1 from "../../public/assets/images/partners/server-room-c
 import partnershipImage2 from "../../public/assets/images/partners/electrical-panel-installation-commercial.webp";
 import partnershipImage3 from "../../public/assets/images/partners/network roomcablemanagement.webp";
 
+import ScrollReveal from "@/components/ScrollReveal";
+
 export default function Partnership() {
   const t = useTranslations("Partnership");
-
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const scrollAmount = 300;
-
-  const handlePrev = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollLeft -= scrollAmount;
-    }
-  };
-
-  const handleNext = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollLeft += scrollAmount;
-    }
-  };
 
   const partnershipData = [
     {
@@ -66,51 +49,39 @@ export default function Partnership() {
       <DashedBorderContainer showTop={false} className="overflow-hidden">
         <div className="flex flex-col">
           <div className="md:max-w-lg">
-            <div>
-              <Tag>{t("tag")}</Tag>
-            </div>
+            <ScrollReveal>
+              <div>
+                <Tag>{t("tag")}</Tag>
+              </div>
+            </ScrollReveal>
             <div className="mt-8">
-              <h3 className="text-h3 font-medium text-text-blackPrimary">
-                {t("title")}
-              </h3>
-              <p className="mt-3 text-body1 text-text-blackSecondary">
-                {t("description")}
-              </p>
+              <ScrollReveal delay={100}>
+                <h3 className="text-h3 font-medium text-text-blackPrimary">
+                  {t("title")}
+                </h3>
+              </ScrollReveal>
+              <ScrollReveal delay={200}>
+                <p className="mt-3 text-body1 text-text-blackSecondary">
+                  {t("description")}
+                </p>
+              </ScrollReveal>
             </div>
           </div>
           <div className="mt-9">
-            <div className="md:flex items-center justify-between hidden">
-              <div></div>
-              <div className="flex items-center gap-4 md:mr-9">
-                <Button
-                  variant="secondary"
-                  icon={<ArrowLeftBlackIcon />}
-                  onClick={handlePrev}
-                  aria-label={t("buttons.prev")}
-                />
-                <Button
-                  variant="secondary"
-                  icon={<ArrowRightBlackIcon />}
-                  onClick={handleNext}
-                  aria-label={t("buttons.next")}
-                />
-              </div>
-            </div>
-
             <div
-              ref={scrollContainerRef}
-              className="mt-6 flex items-start gap-7 overflow-x-scroll scrollbar-hide smooth-scroll"
+              className="mt-6 flex items-stretch gap-7 overflow-x-scroll scrollbar-hide smooth-scroll"
             >
               {partnershipData.map((data, index) => (
-                <PartnershipCard
-                  key={index}
-                  title={data.title}
-                  subtitle={data.subtitle}
-                  imageSrc={data.imageSrc}
-                  imageAlt={data.imageAlt}
-                  iconSrc={data.iconSrc}
-                  buttonIcon={data.buttonIcon}
-                />
+                <ScrollReveal key={index} delay={300 + index * 100} className="h-full">
+                  <PartnershipCard
+                    title={data.title}
+                    subtitle={data.subtitle}
+                    imageSrc={data.imageSrc}
+                    imageAlt={data.imageAlt}
+                    iconSrc={data.iconSrc}
+                    buttonIcon={data.buttonIcon}
+                  />
+                </ScrollReveal>
               ))}
             </div>
           </div>
