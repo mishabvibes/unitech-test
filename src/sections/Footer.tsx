@@ -28,10 +28,10 @@ export default function Footer() {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="relative pb-5">
-      <DashedBorderContainer showBottom={false}>
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div className="flex items-start gap-6 md:gap-10">
+    <footer className="relative">
+      <DashedBorderContainer showBottom={false} className="!pb-6 lg:!pb-10">
+        <div className="max-w-5xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-10">
+          <div className="hidden lg:flex items-start gap-6 md:gap-10">
             <div>
               <Image src={logo} alt="Unitech Distribution logo" className="size-14" />
             </div>
@@ -64,7 +64,6 @@ export default function Footer() {
               </div>
               <div className="mt-3 flex items-center gap-3">
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  {/*  — Add real LinkedIn URL */}
                   <Image
                     src={linkedinIcon}
                     alt="LinkedIn"
@@ -75,14 +74,14 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex lg:justify-end">
-            <div className="grid grid-cols-2 md:grid-cols-[repeat(4,_140px)] items-start gap-7 xl:gap-10">
+          <div className="flex w-full lg:justify-end">
+            <div className="w-full grid grid-cols-2 md:grid-cols-4 items-start gap-x-6 gap-y-10 lg:gap-10">
               {footerLinks.map((section, index) => (
                 <div key={index}>
-                  <h3 className="font-medium text-text-blackPrimary">
+                  <h3 className="font-medium text-text-blackPrimary mb-4">
                     {t(`Links.${section.key}`)}
                   </h3>
-                  <div className="flex flex-col gap-1 mt-3">
+                  <div className="flex flex-col gap-2.5">
                     {section.links.map((link, linkIndex) => (
                       <a
                         key={linkIndex}
@@ -116,8 +115,8 @@ export default function Footer() {
           </div>
         </div>
       </DashedBorderContainer>
-      <div className="absolute bottom-0 left-0 -z-10">
-        <Image src={vectorFooterImage} alt="Decorative footer background" draggable="false" />
+      <div className="absolute inset-0 w-full h-full overflow-hidden -z-10">
+        <Image src={vectorFooterImage} alt="Decorative footer background" className="w-full h-full object-cover object-bottom" draggable="false" />
       </div>
     </footer>
   );
